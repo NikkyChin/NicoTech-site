@@ -1,15 +1,42 @@
-{% extends 'base.html' %}
-{% load static %}
+<!DOCTYPE html>
+<html lang="es">
 
-{% block content %}
+    <head>
 
-    <header>
+        <meta charset="UTF-8">
+
+        <meta name="description" content="Nicotech Software desarrolla aplicaciones web, sistemas a medida y soluciones digitales para empresas e instituciones.">
+        <meta name="keywords" content="django, python, software, aplicaciones web, desarrollo web, nicotech software">
+
+        <link rel="icon" href="assets/img/logo.ico" type="image/x-icon">
+        <title>Nicotech Software</title>
+
+        <link rel="stylesheet"
+            href="assets/css/styles.css">
+
+        <link rel="preconnect"
+            href="https://fonts.googleapis.com">
+
+        <link rel="preconnect"
+            href="https://fonts.gstatic.com"
+            crossorigin>
+
+        <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap"
+            rel="stylesheet">
+
+        <script src="https://kit.fontawesome.com/your-kit.js"
+                crossorigin="anonymous"></script>
+
+    </head>
+
+    <body>
+        <header>
 
         <nav class="navbar">
 
             <a href="#" class="logo">
 
-                <img src="{% static 'img/logo.png' %}" alt="Nicotech Software" style="width:40px; height:40px;">
+                <img src="assets/img/logo.png" alt="Nicotech Software" style="width:40px; height:40px;">
                 NicoTech Software
             </a>
 
@@ -49,9 +76,11 @@
 
                 <p>
 
-                    En Nicotech Software desarrollamos aplicaciones web,
-                    sistemas empresariales y soluciones digitales pensadas
-                    para optimizar procesos y hacer crecer tu negocio.
+                    En Nicotech Software desarrollamos software que impulsa
+                    empresas, instituciones y emprendimientos.
+
+                    Creamos aplicaciones web y sistemas a medida
+                    centrados en calidad, rendimiento y escalabilidad.
 
                 </p>
 
@@ -75,7 +104,7 @@
 
             <div class="hero-right">
 
-                <img src="{% static 'img/logo.png' %}" alt="Logo">
+                <img src="assets/img/logo.png" alt="Logo">
 
             </div>
 
@@ -183,9 +212,9 @@
 
                     Más que desarrollar software, buscamos construir relaciones de confianza basadas en la transparencia, la comunicación y la mejora continua. Ese compromiso es el que resume nuestro lema:
 
-                    <h3>Soluciones claras. Sistemas sólidos.</h3>
-
                 </p>
+                
+                <h3 class="about-slogan">Soluciones claras. Sistemas sólidos.</h3>
 
             </div>
 
@@ -320,10 +349,13 @@
             </div>
 
         </section>
-    
-    </main>
 
-    <footer>
+
+        <script src="{% static 'js/script.js' %}"></script>
+
+    </body>
+
+        <footer>
 
         <img src="{% static 'img/logo.png' %}" alt="Nicotech">
 
@@ -343,4 +375,4 @@
 
     </footer>
 
-{% endblock %}
+</html>
