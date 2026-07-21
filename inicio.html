@@ -1,0 +1,346 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block content %}
+
+    <header>
+
+        <nav class="navbar">
+
+            <a href="#" class="logo">
+
+                <img src="{% static 'img/logo.png' %}" alt="Nicotech Software" style="width:40px; height:40px;">
+                NicoTech Software
+            </a>
+
+            <ul>
+
+                <li><a href="#inicio">Inicio</a></li>
+                <li><a href="#servicios">Servicios</a></li>
+                <li><a href="#nosotros">Nosotros</a></li>
+                <li><a href="#proyectos">Proyectos</a></li>
+                <li><a href="#contacto">Contacto</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main>
+
+        <section class="hero" id="inicio">
+
+            <div class="hero-left">
+
+                <span class="badge">
+
+                    DESARROLLO DE SOFTWARE
+
+                </span>
+
+                <h1>
+
+                    Soluciones claras.
+                    <br>
+                    Sistemas sólidos.
+
+                </h1>
+
+                <p>
+
+                    En Nicotech Software desarrollamos aplicaciones web,
+                    sistemas empresariales y soluciones digitales pensadas
+                    para optimizar procesos y hacer crecer tu negocio.
+
+                </p>
+
+                <div class="buttons">
+
+                    <a href="#proyectos" class="btn-primary">
+
+                        Ver proyectos
+
+                    </a>
+
+                    <a href="#contacto" class="btn-secondary">
+
+                        Solicitar presupuesto
+
+                    </a>
+
+                </div>
+
+            </div>
+
+            <div class="hero-right">
+
+                <img src="{% static 'img/logo.png' %}" alt="Logo">
+
+            </div>
+
+        </section>
+
+        <section class="services" id="servicios">
+
+            <div class="section-title">
+
+                <span>Servicios</span>
+
+                <h2>¿Qué podemos hacer por vos?</h2>
+
+            </div>
+
+            <div class="cards">
+
+                <div class="card">
+
+                    <div class="icon">💻</div>
+
+                    <h3>Desarrollo Web</h3>
+
+                    <p>
+
+                        Sitios y aplicaciones modernas,
+                        rápidas y escalables.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="icon">⚙️</div>
+
+                    <h3>Sistemas a Medida</h3>
+
+                    <p>
+
+                        Software adaptado completamente
+                        a tu negocio.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="icon">☁️</div>
+
+                    <h3>Cloud & DevOps</h3>
+
+                    <p>
+
+                        Docker, Linux,
+                        despliegues y servidores.
+
+                    </p>
+
+                </div>
+
+                <div class="card">
+
+                    <div class="icon">🛠</div>
+
+                    <h3>Soporte</h3>
+
+                    <p>
+
+                        Mantenimiento,
+                        mejoras y actualizaciones.
+
+                    </p>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="about" id="nosotros">
+
+            <div class="about-text">
+
+                <span>Sobre Nicotech</span>
+
+                <h2>
+
+                    Tecnología pensada para resolver problemas reales.
+
+                </h2>
+
+                <p>
+
+                    En Nicotech Software creemos que un buen sistema
+                    no solo debe funcionar, sino también ser claro,
+                    escalable y fácil de mantener.
+
+                </p>
+
+                <p>
+
+                    Trabajamos junto a empresas, instituciones públicas y emprendedores, acompañando cada etapa del proyecto: desde la definición de los requerimientos hasta la implementación, capacitación y soporte. Entendemos que detrás de cada sistema existen personas, procesos y objetivos que merecen una solución confiable.
+
+                    Más que desarrollar software, buscamos construir relaciones de confianza basadas en la transparencia, la comunicación y la mejora continua. Ese compromiso es el que resume nuestro lema:
+
+                    <h3>Soluciones claras. Sistemas sólidos.</h3>
+
+                </p>
+
+            </div>
+
+        </section>
+
+        <section class="projects" id="proyectos">
+
+            <div class="section-title">
+
+                <span>Proyectos</span>
+
+                <h2>Algunos de nuestros trabajos</h2>
+
+            </div>
+
+            <div class="project-container">
+
+                <div class="project-card">
+
+                    <div class="project-info">
+
+                        <h3>Sistema de Gestión Social</h3>
+
+                        <p>
+
+                            Sistema web desarrollado para la Municipalidad de Rawson 
+                            destinado a gestionar la entrega de ayudas sociales de manera 
+                            segura y organizada. Permite administrar personas, grupos 
+                            familiares, usuarios, secretarías y tipos de ayuda, registrar 
+                            entregas con auditoría, generar comprobantes en PDF, enviarlos 
+                            por correo electrónico, consultar historiales y obtener 
+                            estadísticas para mejorar el seguimiento, la transparencia y 
+                            la toma de decisiones en la gestión social.
+
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>Django</span>
+                            <span>Python</span>
+                            <span>PostgreSQL</span>
+                            <span>Docker</span>
+                            <span>Nginx</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+                <div class="project-card">
+
+                    <div class="project-info">
+
+                        <h3>Playón de Secuestro y Guarda de Vehiculos Municipal</h3>
+
+                        <p>
+                            Sistema web desarrollado para optimizar la gestión del 
+                            Playón de Secuestro y Guarda de Vehiculos Municipal, permitiendo 
+                            registrar ingresos y egresos de vehículos, administrar la ocupación
+                            de los espacios disponibles y mantener un historial completo de movimientos.
+                            La plataforma facilita el trabajo del personal mediante una interfaz 
+                            intuitiva, mejorando el control, la trazabilidad y la organización de 
+                            las operaciones diarias del playón.
+                        </p>
+
+                        <div class="project-tags">
+
+                            <span>Django</span>
+                            <span>Python</span>
+                            <span>Docker</span>
+                            <span>PostgreSQL</span>
+                            <span>Nginx</span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <section class="contact" id="contacto">
+
+            <div class="section-title">
+
+                <span>Contacto</span>
+
+                <h2>¿Hablamos sobre tu proyecto?</h2>
+
+            </div>
+
+            <p class="contact-text">
+
+                Si tenés una idea, necesitás modernizar un sistema o querés desarrollar
+                una aplicación desde cero, estaremos encantados de ayudarte.
+
+            </p>
+
+            <div class="contact-grid">
+
+                <a href="mailto:nmbarrientos@udc.edu.ar" class="contact-card">
+
+                    <h3>Email</h3>
+
+                    <p>nmbarrientos@udc.edu.ar</p>
+
+                </a>
+
+                <a href="https://wa.me/549XXXXXXXXXX"
+                target="_blank"
+                class="contact-card">
+
+                    <h3>WhatsApp</h3>
+
+                    <p>Enviar mensaje</p>
+
+                </a>
+
+                <a href="https://facebook.com/"
+                target="_blank"
+                class="contact-card">
+
+                    <h3>Facebook</h3>
+
+                    <p>Nicotech Software</p>
+
+                </a>
+
+            </div>
+
+        </section>
+    
+    </main>
+
+    <footer>
+
+        <img src="{% static 'img/logo.png' %}" alt="Nicotech">
+
+        <h3>NICOTECH SOFTWARE</h3>
+
+        <p>
+
+            Soluciones claras. Sistemas sólidos.
+
+        </p>
+
+        <small>
+
+            © 2026 Nicotech Software. Todos los derechos reservados.
+
+        </small>
+
+    </footer>
+
+{% endblock %}
